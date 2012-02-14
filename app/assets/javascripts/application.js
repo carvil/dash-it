@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require ember
+//= require ember-rest
+//= require ember/dash-it
 //= require_tree .
