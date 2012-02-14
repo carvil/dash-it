@@ -1,4 +1,15 @@
 <td>{{project.id}}</td>
 <td class="data">
-  {{project.name}}
+  {{#if isEditing}}
+    {{view DashIt.EditProjectView}}
+  {{else}}
+    {{project.name}}
+  {{/if}}
+  <div class="commands">
+    {{#unless isEditing}}
+      <a href="#" {{action "showEdit"}}>Edit</a>
+      <a href="#" {{action "destroyRecord"}}>Remove</a>
+    {{/unless}}
+  </div>
 </td>
+
