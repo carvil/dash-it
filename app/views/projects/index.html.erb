@@ -1,2 +1,13 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<h1>Projects</h1>
+
+<script type="text/x-handlebars">
+  {{ view DashIt.ListProjectsView }}
+</script>
+
+<h2><%= @projects.to_json.html_safe %></h2>
+
+<script type="text/javascript">
+  $(function() {
+    DashIt.projectsController.loadAll(<%= @projects.to_json.html_safe %>);
+  });
+</script>
