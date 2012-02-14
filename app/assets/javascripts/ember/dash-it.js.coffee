@@ -1,1 +1,0 @@
-Dash = Ember.Application.create();
