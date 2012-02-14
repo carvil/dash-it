@@ -1,22 +1,16 @@
 class ProjectsController < ApplicationController
-  # GET /projects
-  # GET /projects.json
-  def index
-    @projects = project.all
 
-    respond_to do |format|
-      format.html { render }
-      format.json { render json: @projects }
-    end
+  respond_to :html, :json
+
+  def index
+    @projects = Project.all
+    respond_with @projects
   end
 
   # GET /projects/1.json
   def show
-    @project = project.find(params[:id])
-
-    respond_to do |format|
-      format.json { render json: @project }
-    end
+    @project = Project.find(params[:id])
+    respond_with @project
   end
 
   def new
@@ -25,7 +19,7 @@ class ProjectsController < ApplicationController
 
   # POST /projects.json
   def create
-    @project = project.new(params[:project])
+    @project = Project.new(params[:project])
 
     respond_to do |format|
       if @project.save
@@ -38,7 +32,7 @@ class ProjectsController < ApplicationController
 
   # PUT /projects/1.json
   def update
-    @project = project.find(params[:id])
+    @project = Project.find(params[:id])
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
@@ -51,7 +45,7 @@ class ProjectsController < ApplicationController
 
   # DELETE /projects/1.json
   def destroy
-    @project = project.find(params[:id])
+    @project = Project.find(params[:id])
     @project.destroy
 
     respond_to do |format|
