@@ -1,4 +1,4 @@
 DashIt.Project  = Ember.Resource.extend
-  resourceUrl:        '/projects.json'
+  resourceUrl:        '/projects'
   resourceName:       'project'
   resourceProperties: ['name']
