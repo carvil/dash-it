@@ -5,3 +5,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 DashIt::Application.load_tasks
+
+task :test => ["db:create", "db:migrate"] do
+  Rake::Task['spec'].invoke
+end
