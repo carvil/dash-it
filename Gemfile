@@ -4,7 +4,7 @@ gem 'rails', '3.2.0'
 gem 'sqlite3'
 gem 'jquery-rails'
 
-gem "ember-rails"
+gem "ember-rails", "~> 0.2.4"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
