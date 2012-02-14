@@ -4,8 +4,6 @@
   {{ view DashIt.ListProjectsView }}
 </script>
 
-<h2><%= @projects.to_json.html_safe %></h2>
-
 <script type="text/javascript">
   $(function() {
     DashIt.projectsController.loadAll(<%= @projects.to_json.html_safe %>);
