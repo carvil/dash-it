@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ember
+//= require ember-dev
 //= require ember-rest
-//= require ember/dash-it
+//= require ember/dashit
 //= require_tree .
