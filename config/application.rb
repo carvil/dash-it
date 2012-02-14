@@ -61,7 +61,7 @@ module DashIt
       g.orm :active_record
       g.test_framework :rspec
       g.integration_tool :capybara
-      g.fixture_replacement :factory_girl
+      g.fixture_replacement :factory_girl, :dir => "spec/factories"
     end
   end
 end
