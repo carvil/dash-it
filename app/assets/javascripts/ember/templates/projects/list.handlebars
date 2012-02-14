@@ -9,5 +9,17 @@
   {{#each projects}}
     {{view DashIt.ShowProjectView projectBinding="this"}}
   {{/each}}
+  {{#if isNewVisible}}
+    <tr>
+      <td>*</td>
+      <td>
+        {{view DashIt.NewProjectView}}
+      </td>
+    </tr>
+  {{/if}}
   </tbody>
 </table>
+<div class="commands">
+  <a href="#" {{action "showNew"}}>New Project</a>
+  <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
+</div>
