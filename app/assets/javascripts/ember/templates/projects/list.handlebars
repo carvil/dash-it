@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each projects}}
+    {{view DashIt.ShowProjectView projectBinding="this"}}
+  {{/each}}
+  </tbody>
+</table>
