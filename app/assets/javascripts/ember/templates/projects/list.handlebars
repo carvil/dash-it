@@ -1,22 +1,15 @@
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
+<dl>
+  <dt>
   {{#each projects}}
     {{view DashIt.ShowProjectView projectBinding="this"}}
   {{/each}}
   {{#if isNewVisible}}
-    <tr>
-      <td>
-        {{view DashIt.NewProjectView}}
-      </td>
-    </tr>
+    <dt>
+      {{view DashIt.NewProjectView}}
+    </dt>
   {{/if}}
-  </tbody>
-</table>
+  </dt>
+</dl>
 
 <hr>
 <div class="commands">
