@@ -15,12 +15,10 @@ DashIt.EditProjectView = Ember.View.extend
 
   submit: (event) ->
     project = @get("project")
-
     event.preventDefault()
-
-    project.saveResource().fail((e) ->
-      DashIt.displayError e
-    ).done ->
+    project.saveResource().fail((e) =>
+      console.log e
+    ).done =>
       parentView = @get("parentView")
       parentView.get("project").duplicateProperties(project)
       parentView.hideEdit()
