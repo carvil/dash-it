@@ -1,7 +1,7 @@
 DashIt.ShowProjectView = Ember.View.extend
   templateName: 'ember/templates/projects/show'
   classNames: ['show-project']
-  tagName: 'tr'
+  tagName: 'dl'
 
   doubleClick: ->
     @showEdit()
