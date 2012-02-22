@@ -1,7 +1,4 @@
 DashIt::Application.routes.draw do
-
-  DashIt::Application.routes.draw do
-    root :to => 'projects#index'
-    resources :projects
-  end
+  root :to => redirect('/projects')
+  resources :projects
 end
