@@ -17,4 +17,4 @@ DashIt.ShowProjectView = Ember.View.extend
     project.destroyResource().fail((e) ->
       DashIt.displayError e
     ).done ->
-      DashIt.projectsController.removeObject projects
+      DashIt.projectsController.removeObject project
