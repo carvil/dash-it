@@ -1,11 +1,15 @@
-<h1>Projects</h1>
+<div class="row equal-heights" style="text-align: center;">
+  <div class="span4 offset4">
+    <h1 class="title">Projects</h1>
 
-<script type="text/x-handlebars">
-  {{ view DashIt.ListProjectsView }}
-</script>
+    <script type="text/x-handlebars">
+      {{ view DashIt.ListProjectsView }}
+    </script>
 
-<script type="text/javascript">
-  $(function() {
-    DashIt.projectsController.loadAll(<%= @projects.to_json.html_safe %>);
-  });
-</script>
+    <script type="text/javascript">
+      $(function() {
+        DashIt.projectsController.loadAll(<%= @projects.to_json.html_safe %>);
+      });
+    </script>
+  </div>
+</div>
