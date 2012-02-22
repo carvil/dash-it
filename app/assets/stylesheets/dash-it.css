@@ -1,0 +1,13 @@
+div.floating {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #FFF;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    -webkit-box-shadow:0 0 15px #666666; 
+    -moz-box-shadow: 0 0 15px #666666; 
+    box-shadow:0 0 15px #666666; 
+}

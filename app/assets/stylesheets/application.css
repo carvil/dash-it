@@ -12,5 +12,6 @@
  *= require bootstrap
  *= require bootstrap-responsive
  *= require jumbotrons
+ *= require dash-it
  *= require_tree .
 */
