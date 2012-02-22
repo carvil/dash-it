@@ -1,7 +1,6 @@
 <table>
   <thead>
     <tr>
-      <th>ID</th>
       <th>Name</th>
     </tr>
   </thead>
@@ -11,7 +10,6 @@
   {{/each}}
   {{#if isNewVisible}}
     <tr>
-      <td>*</td>
       <td>
         {{view DashIt.NewProjectView}}
       </td>
@@ -19,6 +17,8 @@
   {{/if}}
   </tbody>
 </table>
+
+<hr>
 <div class="commands">
   <a href="#" {{action "showNew"}}>New Project</a>
   <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
