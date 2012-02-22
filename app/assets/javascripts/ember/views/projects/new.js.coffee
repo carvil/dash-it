@@ -17,7 +17,7 @@ DashIt.NewProjectView = Ember.View.extend
     project = @get("project")
     event.preventDefault()
     project.saveResource().fail((e) ->
-      DashIt.displayError e
+      console.log e
     ).done ->
       DashIt.projectsController.pushObject project
       self.get("parentView").hideNew()

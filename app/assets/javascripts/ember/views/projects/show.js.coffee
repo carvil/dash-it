@@ -15,6 +15,6 @@ DashIt.ShowProjectView = Ember.View.extend
   destroyRecord: ->
     project = @get("project")
     project.destroyResource().fail((e) ->
-      DashIt.displayError e
+      console.log e
     ).done ->
       DashIt.projectsController.removeObject project
