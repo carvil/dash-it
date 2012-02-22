@@ -1,14 +1,15 @@
-<dt>
-  {{#if isEditing}}
-    {{view DashIt.EditProjectView}}
-  {{else}}
-    {{project.name}}
-  {{/if}}
-  <div class="commands">
-    {{#unless isEditing}}
-      <a href="#" {{action "showEdit"}}>Edit</a>
-      <a href="#" {{action "destroyRecord"}}>Remove</a>
-    {{/unless}}
-  </div>
-</dt>
-
+<div class="floating">
+  <dt>
+    {{#if isEditing}}
+      {{view DashIt.EditProjectView}}
+    {{else}}
+      <p>{{project.name}}</p>
+    {{/if}}
+    <div class="commands">
+      {{#unless isEditing}}
+        <a href="#" {{action "showEdit"}}>Edit</a>
+        <a href="#" {{action "destroyRecord"}}>Remove</a>
+      {{/unless}}
+    </div>
+  </dt>
+</div>
