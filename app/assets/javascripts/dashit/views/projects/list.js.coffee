@@ -1,5 +1,5 @@
 DashIt.ListProjectsView = Ember.View.extend
-  templateName:    'ember/templates/projects/list'
+  templateName:    'dashit/templates/projects/list'
   projectsBinding: 'DashIt.projectsController'
 
   refreshListing: 

@@ -1,5 +1,5 @@
 DashIt.ShowProjectView = Ember.View.extend
-  templateName: 'ember/templates/projects/show'
+  templateName: 'dashit/templates/projects/show'
   classNames: ['show-project']
   tagName: 'dl'
 

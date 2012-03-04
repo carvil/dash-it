@@ -1,6 +1,6 @@
 DashIt.EditProjectView = Ember.View.extend
   tagName: "form"
-  templateName: "ember/templates/projects/edit"
+  templateName: "dashit/templates/projects/edit"
   init: ->
     editableProject = DashIt.Project.create(@get("parentView").get("project"))
     @set "project", editableProject

@@ -15,5 +15,5 @@
 //= require bootstrap
 //= require ember
 //= require ember-rest
-//= require ember/dashit
+//= require dashit/dashit
 //= require_tree .
