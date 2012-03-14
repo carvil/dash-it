@@ -15,11 +15,11 @@ DashIt.ShowProjectView = Ember.View.extend
   hideEdit: ->
     @set "isEditing", false
 
-  showTodos: ->
-    @set "displayTodos", true
-
-  hideTodos: ->
-    @set "displayTodos", false
+  toggleTodos: ->
+    if @get("displayTodos")
+      @set "displayTodos", false
+    else
+      @set "displayTodos", true
 
   destroyRecord: ->
     project = @get("project")
