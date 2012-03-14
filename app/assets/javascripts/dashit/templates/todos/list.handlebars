@@ -3,5 +3,14 @@
   {{#each todos}}
     {{view DashIt.ShowTodoView todoBinding="this"}}
   {{/each}}
+  {{#if isNewTodoVisible}}
+    <dt>
+      {{view DashIt.NewTodoView}}
+    </dt>
+  {{/if}}
+
+  <div class="commands">
+      <a href="#" {{action "showNewTodo"}}>new todo</a>
+  </div>
   </dt>
 </dl>
