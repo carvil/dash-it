@@ -1,0 +1,7 @@
+{{#with todo}}
+  {{view Ember.TextField valueBinding="description" placeholder="Description"}}
+  <button type="submit">
+    {{#if id}}Update{{else}}Create{{/if}}
+  </button>
+{{/with}}
+<a href="#" {{action "cancelForm"}}>Cancel</a>
