@@ -3,6 +3,9 @@ DashIt.ShowProjectView = Ember.View.extend
   classNames: ['show-project']
   tagName: 'dl'
 
+  didInsertElement: ->
+    @set "todos", @get("project").get("todos").findAll()
+
   doubleClick: ->
     @showEdit()
 
@@ -11,6 +14,12 @@ DashIt.ShowProjectView = Ember.View.extend
 
   hideEdit: ->
     @set "isEditing", false
+
+  showTodos: ->
+    @set "displayTodos", true
+
+  hideTodos: ->
+    @set "displayTodos", false
 
   destroyRecord: ->
     project = @get("project")
