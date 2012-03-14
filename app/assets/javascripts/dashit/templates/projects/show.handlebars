@@ -4,9 +4,11 @@
       {{view DashIt.EditProjectView}}
     {{else}}
       <p>{{project.name}}</p>
+      {{view DashIt.ProjectTodosView todosBinding="project.todos"}}
     {{/if}}
     <div class="commands">
       {{#unless isEditing}}
+        <a href="#" {{action "showTodos"}}>todos</a>
         <a href="#" {{action "showEdit"}}>edit</a>
         <a href="#" {{action "destroyRecord"}}>delete</a>
       {{/unless}}
