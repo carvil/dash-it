@@ -13,7 +13,7 @@ DashIt.NewProjectView = Ember.View.extend
     @get("parentView").hideNew()
 
   submit: (event) ->
-    self = this
+    self = @
     project = @get("project")
     event.preventDefault()
     project.saveResource().fail((e) ->
