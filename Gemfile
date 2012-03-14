@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
 gem 'sqlite3'
-gem 'jquery-rails'
+gem 'jquery-rails', "2.0.1"
 
 gem "ember-rails", "~> 0.2.4"
 
