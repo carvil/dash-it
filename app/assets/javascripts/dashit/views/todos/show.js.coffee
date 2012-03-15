@@ -4,5 +4,16 @@ DashIt.ShowTodoView = Ember.View.extend
   tagName: 'dl'
 
   didInsertElement: ->
-    project = @get("project")
-    window.bla = @
+    project = @get("parentView").get("project")
+    @set "project", project
+
+  doubleClick: ->
+    @showTodoEdit()
+
+  showTodoEdit: ->
+    @set "isTodoEditing", true
+
+  hideTodoEdit: ->
+    @set "isTodoEditing", false
+
+
