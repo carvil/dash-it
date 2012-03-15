@@ -26,4 +26,16 @@ class TodosController < ApplicationController
       end
     end
   end
+
+  def update
+    @todo = Todo.find(params[:id])
+
+    respond_to do |format|
+      if @todo.update_attributes(params[:todo])
+        format.json { render json: nil, status: :ok }
+      else
+        format.json { render json: @todo.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 end
