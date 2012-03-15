@@ -6,9 +6,6 @@ DashIt.ShowProjectView = Ember.View.extend
   didInsertElement: ->
     @set "todos", @get("project").get("todos").findAll()
 
-  doubleClick: ->
-    @showEdit()
-
   showEdit: ->
     @set "isEditing", true
 
