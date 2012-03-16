@@ -11,3 +11,8 @@ div.floating {
     -moz-box-shadow: 0 0 15px #666666; 
     box-shadow:0 0 15px #666666; 
 }
+
+div.done {
+  text-color: #B7B7B7;
+  text-decoration: line-through;
+}
