@@ -1,5 +1,5 @@
 {{#if isTodoEditing}}
   {{view DashIt.EditTodoView}}
 {{else}}
-  <p>{{todo.description}}</p>
+{{view DashIt.ShowTodoCheckboxView todoBinding="todo"}}
 {{/if}}
