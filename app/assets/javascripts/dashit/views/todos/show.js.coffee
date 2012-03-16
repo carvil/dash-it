@@ -4,8 +4,13 @@ DashIt.ShowTodoView = Ember.View.extend
   tagName: 'dl'
 
   didInsertElement: ->
+    # fetch the project from the previous view
     project = @get("parentView").get("project")
     @set "project", project
+    # set the resource url
+    todo = @get("todo")
+    todo.resourceUrl = project.todos._resourceUrl()
+    @set "todo", todo
 
   doubleClick: ->
     @showTodoEdit()
@@ -15,5 +20,3 @@ DashIt.ShowTodoView = Ember.View.extend
 
   hideTodoEdit: ->
     @set "isTodoEditing", false
-
-
