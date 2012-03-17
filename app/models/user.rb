@@ -11,6 +11,9 @@ class User < ActiveRecord::Base
 
   def self.find_for_omniauth_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info
+    puts "==============================="
+    puts data
+    puts "==============================="
     if data.email
       if user = User.where(:email => data.email).first
         user
