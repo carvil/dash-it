@@ -10,6 +10,14 @@
 <body>
   <div class="container">
     <div id="content_wrapper">
+      <% unless current_user %>
+        <header class="jumbotron masthead">
+          <div class="marketing">
+            <h1>Dash It</h1>
+            <p>simple todos organiser</p>
+          </div>
+        </header>
+      <% end %>
       <%= yield %>
     </div>
   </div>
