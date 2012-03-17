@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+    <%= render 'layouts/flash', :flash => flash %>
     <div id="content_wrapper">
       <% unless current_user %>
         <header class="jumbotron masthead">
