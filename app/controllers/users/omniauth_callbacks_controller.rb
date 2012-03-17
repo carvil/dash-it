@@ -12,6 +12,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       end
     else
       flash[:error] = I18n.t "devise.omniauth_callbacks.noemail", :kind => "Github"
+      redirect_to new_user_registration_url
     end
   end
 end
