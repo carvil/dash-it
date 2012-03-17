@@ -11,10 +11,14 @@ class User < ActiveRecord::Base
 
   def self.find_for_github_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info
-    if user = User.where(:email => data.email).first
-      user
+    if data.email
+      if user = User.where(:email => data.email).first
+        user
+      else
+        User.create!(:email => data.email, :password => Devise.friendly_token[0,20]) 
+      end
     else
-      User.create!(:email => data.email, :password => Devise.friendly_token[0,20]) 
+      flash[:error] = 'devise.omniauth_callbacks.noemail', kind: "Github"
     end
   end
 
