@@ -1,0 +1,35 @@
+<div class="row equal-heights" style="text-align: center;">
+  <div class="span4 offset4">
+
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { class: "form-inline" }) do |f| %>
+      <fieldset>
+        <legend>Sign in</legend>
+        <br/>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.email_field :email, placeholder: :email %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.password_field :password, placeholder: :password %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.submit "Sign in", :class => "btn btn-primary" %>
+          </div>
+          <%- if devise_mapping.omniauthable? %>
+            <br/>
+            <p class="help-block">or sign in with</p>
+            <br/>
+            <%- resource_class.omniauth_providers.each do |provider| %>
+              <%= link_to "#{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider), class: "btn" %>
+            <% end -%>
+          <% end -%>
+        </div>
+      </fieldset>
+    <% end %>
+    <%= render "users/links" %>
+  </div>
+</div>

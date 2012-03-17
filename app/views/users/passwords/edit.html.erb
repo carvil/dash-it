@@ -1,0 +1,30 @@
+<div class="row equal-heights" style="text-align: center;">
+  <div class="span4 offset4">
+
+    <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { class: "form-inline", method: :put }) do |f| %>
+      <fieldset>
+        <legend>Change your password</legend>
+        <br/>
+        <%= f.hidden_field :reset_password_token %>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.password_field :password, placeholder: :password %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.submit "Change my password",class: "btn btn-primary" %>
+          </div>
+        </div>
+      </fieldset>
+    <% end %>
+    <%= render "users/links" %>
+  </div>
+</div>
+
+
