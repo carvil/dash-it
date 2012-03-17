@@ -4,6 +4,8 @@ gem 'rails', '3.2.0'
 gem 'jquery-rails', "2.0.1"
 gem 'pg'
 gem "ember-rails", "~> 0.2.4"
+gem 'thin'
+gem 'foreman'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

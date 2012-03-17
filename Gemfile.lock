@@ -46,11 +46,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
+    daemons (1.1.8)
     diff-lcs (1.1.3)
     ember-rails (0.2.4)
       execjs (>= 1.2)
       railties (>= 3.0)
     erubis (2.7.0)
+    eventmachine (0.12.10)
     execjs (1.3.0)
       multi_json (~> 1.0)
     factory_girl (2.5.2)
@@ -59,6 +61,8 @@ GEM
       factory_girl (~> 2.5.0)
       railties (>= 3.0.0)
     ffi (1.0.11)
+    foreman (0.41.0)
+      thor (>= 0.13.6)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.1)
@@ -129,6 +133,10 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.5)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -149,10 +157,12 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   ember-rails (~> 0.2.4)
   factory_girl_rails
+  foreman
   jquery-rails (= 2.0.1)
   pg
   rails (= 3.2.0)
   rspec-rails
   sass-rails (~> 3.2.3)
   sqlite3
+  thin
   uglifier (>= 1.0.3)
