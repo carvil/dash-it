@@ -16,7 +16,7 @@
       </div>
         <% if current_user %>
           <footer class="footer">
-            <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+            <%= link_to "Sign out, #{current_user.email}", destroy_user_session_path, method: :delete %>
           </footer>
         <% end %>
     </header>
