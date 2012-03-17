@@ -11,3 +11,14 @@ DashIt.ProjectTodosView = Ember.View.extend
 
   hideNewTodo:
     -> @set "isNewTodoVisible", false
+
+  clearFinished: -> 
+    todos = @get("todos")
+    dones = todos.content.filterProperty("status","done")
+    dones.forEach @deleteTodo, @
+
+  deleteTodo: (todo, self) ->
+    todo.destroyResource().fail((e) =>
+      console.log e
+    ).done =>
+      @get("project").todos.removeObject todo
