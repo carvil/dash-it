@@ -17,8 +17,6 @@ class User < ActiveRecord::Base
       else
         User.create!(:email => data.email, :password => Devise.friendly_token[0,20]) 
       end
-    else
-      flash[:error] = I18n.t 'devise.omniauth_callbacks.noemail', kind: "Github"
     end
   end
 
