@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
 
-  def self.find_for_github_oauth(access_token, signed_in_resource=nil)
+  def self.find_for_omniauth_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info
     if data.email
       if user = User.where(:email => data.email).first
