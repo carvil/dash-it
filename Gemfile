@@ -7,7 +7,7 @@ gem "ember-rails", "~> 0.2.4"
 gem 'thin'
 gem 'foreman'
 gem 'devise'
-gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'omniauth-github'
 
 group :assets do

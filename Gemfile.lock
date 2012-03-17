@@ -94,24 +94,20 @@ GEM
     multi_json (1.0.4)
     multipart-post (1.1.5)
     nokogiri (1.5.0)
-    oauth (0.4.5)
     oauth2 (0.5.2)
       faraday (~> 0.7)
       multi_json (~> 1.0)
     omniauth (1.0.3)
       hashie (~> 1.2)
       rack
+    omniauth-facebook (1.2.0)
+      omniauth-oauth2 (~> 1.0.0)
     omniauth-github (1.0.1)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
-    omniauth-oauth (1.0.1)
-      oauth
-      omniauth (~> 1.0)
     omniauth-oauth2 (1.0.0)
       oauth2 (~> 0.5.0)
       omniauth (~> 1.0)
-    omniauth-twitter (0.0.8)
-      omniauth-oauth (~> 1.0)
     orm_adapter (0.0.6)
     pg (0.11.0)
     polyglot (0.3.3)
@@ -199,8 +195,8 @@ DEPENDENCIES
   foreman
   jquery-rails (= 2.0.1)
   letter_opener
+  omniauth-facebook
   omniauth-github
-  omniauth-twitter
   pg
   rails (= 3.2.0)
   rspec-rails
