@@ -6,6 +6,7 @@ gem 'pg'
 gem "ember-rails", "~> 0.2.4"
 gem 'thin'
 gem 'foreman'
+gem 'devise'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
