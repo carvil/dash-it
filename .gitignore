@@ -15,3 +15,5 @@
 /tmp
 
 app/assets/javascripts/ember/views/projects/.edit.js.coffee.swp
+
+.env
