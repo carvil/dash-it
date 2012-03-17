@@ -38,4 +38,13 @@ class TodosController < ApplicationController
       end
     end
   end
+
+  def destroy
+    @todo = Todo.find(params[:id])
+    @todo.destroy
+
+    respond_to do |format|
+      format.json { render json: nil, status: :ok }
+    end
+  end
 end
