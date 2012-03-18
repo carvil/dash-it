@@ -10,7 +10,7 @@ Here is why I decided to build this app: [Replacing rails views with ember.js ](
 
 ## Try it online
 
-You can try it online [here](http://dashit.herokuapp.com/).
+You can try it online [here](http://dash-it-app.herokuapp.com).
 
 ## Run it locally
 
