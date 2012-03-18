@@ -1,9 +1,11 @@
 class ProjectsController < ApplicationController
 
+  before_filter :authenticate_user!
+
   respond_to :html, :json
 
   def index
-    @projects = Project.all
+    @projects = Project.where(user_id: current_user.id)
     respond_with @projects
   end
 
