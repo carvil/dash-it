@@ -2,6 +2,7 @@
   <div class="span4 offset4">
 
     <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { class: "form-inline", method: :put }) do |f| %>
+      <%= display_error_messages! %>
       <fieldset>
         <legend>Change your password</legend>
         <br/>

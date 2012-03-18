@@ -2,6 +2,7 @@
   <div class="span4 offset4">
 
     <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { class: "form-inline" }) do |f| %>
+      <%= display_error_messages! %>
       <fieldset>
         <legend>Sign in</legend>
         <br/>
