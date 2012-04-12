@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.2'
 gem 'jquery-rails', "2.0.1"
 gem 'pg'
 gem "ember-rails", "~> 0.2.4"
