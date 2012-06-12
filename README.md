@@ -6,7 +6,7 @@ Create todo lists for your projects
 
 ## Motivation
 
-Here is why I decided to build this app: [Replacing rails views with ember.js ](http://carvil.github.com/Programming/2012/03/18/replacing-rails-views-with-emberjs/)
+Here is why I decided to build this app: [Replacing rails views with ember.js ](http://carvil.github.com/Programming/2012/03/18/replacing-rails-views-with-ember-js/)
 
 ## Try it online
 
