@@ -39,3 +39,7 @@ Please note that if you want to try the login via github and facebook locally, y
     RACK_ENV=development
     FACEBOOK_APP_ID=your_facebook_app_id
     FACEBOOK_APP_SECRET=your_facebook_app_secret
+
+## Copyright
+
+Copyright (c) 2012 Carlos Vilhena. See [LICENSE](https://github.com/carvil/dash-it/blob/master/LICENSE) for details.
