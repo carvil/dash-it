@@ -43,3 +43,4 @@ Please note that if you want to try the login via github and facebook locally, y
 ## Copyright
 
 Copyright (c) 2012 Carlos Vilhena. See [LICENSE](https://github.com/carvil/dash-it/blob/master/LICENSE) for details.
+
