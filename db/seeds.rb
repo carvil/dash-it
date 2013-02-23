@@ -3,7 +3,7 @@
 #
 
 # Test user to get started working on the app right away in development
-ada = User.find_or_create_by_email('ada@example.com', password: 'lovelace', password_confirmation: 'admin')
+ada = User.find_or_create_by_email('ada@example.com', password: 'lovelace', password_confirmation: 'lovelace')
 if ada.projects.size == 0
   project = ada.projects.create(name: "Become world's first computer programmer")
 else
