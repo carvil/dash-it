@@ -2,7 +2,6 @@ development:
   adapter: postgresql
   encoding: unicode
   database: dashit_development
-  username: dashit
   pool: 5
 
 test:
