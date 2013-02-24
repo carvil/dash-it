@@ -24,6 +24,12 @@ If you don't want to use postgres in development mode, change the gemfile to use
 
     bundle exec rake db:migrate
 
+To get started right away with a test user (complete with an example project and some todos), run:
+
+    bundle exec rake db:seed
+
+This will create a user in your development database with email 'ada@example.com' and the password 'lovelace'. When you run the app in development, you will be able to use this user to play around. Don't run this in production.
+
 And finally, you can then either run:
 
     bundle exec rails s
