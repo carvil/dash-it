@@ -20,8 +20,10 @@ If you prefer to run it locally, follow these steps.
     cd dash-it
     bundle install
 
-If you don't want to use postgres in development mode, change the gemfile to use sqlite3 instead (and change the database.yml file). Then, run the migration:
+If you don't want to use postgres in development mode, change the gemfile to use sqlite3 instead (and change the database.yml file).
+Then, create the database and run the migrations:
 
+    bundle exec rake db:create
     bundle exec rake db:migrate
 
 To get started right away with a test user (complete with an example project and some todos), run:
