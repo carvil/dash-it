@@ -1,6 +1,7 @@
 # Dash-It
 
 [![Build Status](https://secure.travis-ci.org/carvil/dash-it.png)](http://travis-ci.org/carvil/dash-it)
+[![Code Climate](https://codeclimate.com/github/carvil/dash-it.png)](https://codeclimate.com/github/carvil/dash-it)
 
 Create todo lists for your projects
 
